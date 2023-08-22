@@ -5,7 +5,7 @@
 
 ## ✔️ Técnicas e tecnologias utilizadas
 
-- ``Spring Boot 3.0.9``
+- ``Spring Boot 3.1.2``
 - ``Spring MVC``
 - ``Java 17``
 - ``Maven``
