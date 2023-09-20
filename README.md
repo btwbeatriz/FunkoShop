@@ -12,8 +12,15 @@
 - ``Thymeleaf``
 - ``Bootstrap``
 - ``HTML``
+- ``MariaDB``
+- ``Bean Validation``
+## Atenção
+- ``É necessário a criação de uma tabela no MariaDB com o nome "funkoshop"``
 
 <p align="center">
   <img alt="Projeto" src=".github/preview.png" width="100%">
+</p>
+<p align="center">
+  <img alt="Projeto" src=".github/preview2.png" width="100%">
 </p>
 
