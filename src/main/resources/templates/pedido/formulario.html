@@ -1,15 +1,9 @@
 <html>
-<head>
-    <meta charset="UTF-8">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-</head>
+<head th:replace="~{base :: head}"></head>
 <body>
+<div th:replace="~{base :: logo}"></div>
 <div class="container">
-    <div class="p-4 mb-2 bg-body-tertiary rounded-3">
-        <div class="container-fluid py-5">
-            <h1 class="display-5 fw-bold">Novo pedido</h1>
-        </div>
-    </div>
+    <div th:replace="~{base :: titulo('Novo Pedido')}"></div>
     <div class="card mt-3">
         <form th:object="${requisicaoNovoPedido}" class="card-body" action="/pedido/novo" method="post">
             <div class="form-group">
@@ -31,10 +25,10 @@
                 <div class="invalid-feedback" th:errors="*{urlImagem}">Erro da url da imagem</div>
             </div>
             <div class="form-group">
-                <label for="urlImagem2">Segunda imagem</label>
+                <label for="urlImagem2">Segunda Imagem</label>
                 <input th:errorclass="is-invalid" th:field="*{urlImagem2}" class="form-control" placeholder="Url da segunda imagem">
                 <small>Copie a url de uma boa imagem do produto e cole aqui para ajudar a conseguir compradores</small>
-                <div class="invalid-feedback" th:errors="*{urlImagem2}">Erro da url da imagem 2</div>
+                <div class="invalid-feedback" th:errors="*{urlImagem2}">Erro da url da segunda imagem</div>
             </div>
             <div class="form-group">
                 <label for="descricao">Descrição</label>
